@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "screenshots",
+  "info": {
+    "singularName": "screenshot",
+    "pluralName": "screenshots",
+    "displayName": "screenshot"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "text"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "screenshots"
+    }
+  }
+}

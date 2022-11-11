@@ -11,17 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
-    "summary": {
+    "thoughts": {
       "type": "text"
     },
     "description": {
       "type": "text"
     },
-    "screenshots": {
-      "type": "json"
+    "briefSummary": {
+      "type": "text"
     },
     "repo": {
       "type": "string"
@@ -31,6 +31,12 @@
     },
     "preview": {
       "type": "string"
+    },
+    "screenshots": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::screenshot.screenshot",
+      "mappedBy": "project"
     }
   }
 }

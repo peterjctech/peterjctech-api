@@ -4,8 +4,7 @@
   "info": {
     "singularName": "content",
     "pluralName": "contents",
-    "displayName": "content",
-    "description": ""
+    "displayName": "content"
   },
   "options": {
     "draftAndPublish": true
@@ -14,12 +13,6 @@
   "attributes": {
     "about": {
       "type": "text"
-    },
-    "github": {
-      "type": "string"
-    },
-    "githubIcon": {
-      "type": "string"
     }
   }
 }
